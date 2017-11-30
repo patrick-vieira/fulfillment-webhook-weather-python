@@ -126,6 +126,11 @@ if __name__ == '__main__':
 
     def date(value):
         return datetime.datetime.strptime(value, '%d.%m.%Y').date()
+    # --api-key e4bececc-d1b4-449e-a949-2b6b7c5e0074
+    # --account-key f03c6814-64e7-4183-8d30-08034a6cee97
+    # --from-date 26.11.2017
+    # --to-date 27.11.2017
+    # --host-name portal-prod
 
     parser = argparse.ArgumentParser(description='Query Logentries API')
     parser.add_argument('--api-key', type=str, action='store',
